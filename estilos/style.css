@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #EDF2F4;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+li{
+    list-style-type: none;
+}
+.logo{
+    display: flex;
+    background-color: #8d99ae;
+    height: 50px;
+    padding: 0px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Lobster", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:hover{ 
+    font-weight:bold; 
+    text-decoration:underline; 
+}
+.barra-con-flex{
+    display: flex;
+
+    height: 37px;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2b2d42;
+    font-size: 18px;
+    margin-bottom: 0%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.barra-con-flex a{
+    color: white;
+}
+
+main{
+    display: flex;
+    background: url(../media/manoMundoM~4.jpg);
+    height: 554px;
+    background-size: cover;
+    background-position: center;
+
+    align-items: end;
+}
+.textoIntro{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: normal;
+    color: black;
+    background-color: #edf2f4cc;
+
+    padding: 15px;
+    margin-bottom: 75px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.leerMas{
+    display: flex;
+    margin-top: 15px;
+    width: 125px;
+    padding: 10px 10px;
+    background-color: rgba(2, 133, 2, 0.5);
+
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 14px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "cursos redes"
+    "cursos grafico"
+    "noticias noticias";
+    grid-template-columns: 850px 300px;
+    grid-column-gap: 100px;
+    grid-template-rows: 170px 280px 400px;
+    grid-row-gap: 45px;
+    margin: 30px 30px;
+
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+}
+
+section#redes{
+    grid-area: redes;
+    padding: 10px;
+    margin-top: 30px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #8d99ae;
+
+}
+section#cursos{
+    grid-area: cursos;
+}
+.linkCurso{
+    display: flex;
+    color: black;
+    flex-direction: row;
+    border: 5px solid #2b2d42;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    padding: 10px;
+}
+.linkCurso:hover{
+    background-color: #b5b9bb;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+section#grafico{
+    grid-area: grafico;
+    text-align: center;
+}
+section#bloqueNoticia{
+    grid-area: noticias;
+
+}
+.noticias{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.noticias a{
+    width: 300px;
+    border: #2b2d42 solid;
+    padding: 10px;
+    border-radius: 4px;
+}
+.noticias a:hover{
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #2b2d42;
+}
+
+/* -------------------CONTACTOS------------------------- */
+
+.contenedor{
+    display: flex;
+    background-image: url(../media/BsAsDef.jpg);
+}
+
+footer{
+    display: flex;
+    height: 400px;
+    background-color: #D90429;
+    padding-left: 30px;
+    font-size: 19px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.iconos{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-register{
+    width: 400px;
+    background: #2b2d42ec;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background: #2b2d42c9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #8d99ae;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.botons{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+.mostrar-menu,.esconder-menu{
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+#check{
+    display: none;
+}
+@media (max-width: 768px) {
+    /* HEADER */
+    .mostrar-menu,.esconder-menu{
+        display: block;
+    }
+    .todo{
+        display: none;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2b2d42;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .barra-con-flex{
+        display: block;
+    }
+    li{
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .mostrar-menu{
+        background-color: #2b2d42;
+        color: white;
+        text-align: center;
+    }
+}
+/* CONTENIDO */
+@media (max-width: 768px) {
+    section#redes{
+        display: none;
+    }
+    .noticias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    section#grafico{
+        background-color: #EDF2F4;
+        padding: 20px;
+    }
+    .grid{
+        grid-template-areas: 
+        "cursos"
+        "grafico"
+        "noticias";
+        grid-template-rows: auto 300px auto;
+        grid-template-columns: auto;
+    }
+    .subMenu{
+        display: none;
+    }
+}
+
+/* Informacion Util */
+.subMenu ul{
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 40px;
+    position: fixed;
+    float: left;
+    padding: 10px;
+    font-size: 19px;
+}
+.subMenu ul li{
+    padding: 10px;
+    margin-top: 10px;
+    border: #000 solid 1px;
+    border-radius: 4px;
+    background-color: cadetblue;
+}
+.subMenu ul li:hover{
+    background-color: #8d99ae;
+}
+.info h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.info p{
+    margin: 10px;
+}
+.info{
+    float: right;
+    margin-top: 40px;
+    margin-right: 90px;
+    max-width: 780px;
+    line-height: 36px;
+    font-size: large;
+}
+
+/* Seccion Nosotros */
+.sobreNosotros h1{
+    font-size: 45px;
+}
+.sobreNosotros p{
+    margin: 10px;
+}
+.sobreNosotros{
+    max-width: 1270px;
+    margin: auto;
+    margin-top: 30px;
+    line-height: 36px;
+    font-size: large;
+}
+.fundadores{
+    background-color: #3c4170;
+    color: white;
+    padding: 30px;
+}
