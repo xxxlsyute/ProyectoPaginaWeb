@@ -304,6 +304,61 @@ footer{
     width: 300px;
     height: 300px;
 }
+/* PROPUESTAS */
+section#propuestasBox{
+    padding: 20px;
+}
+.dropdown{
+    position: relative;
+    background-color: #D90429;
+    margin: 40px 0px;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: large;
+    font-weight: 800;
+}
+.dropdown-content a{
+    background-color: #b5b9bb;
+    display: block;
+    width: 1250px;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+.dropdown label{
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+    /* width: 1300px; */
+}
+.boton-mas{
+    display: none;
+}
+.dropdown p{
+    display: inline;
+}
+#check:checked ~ .dropdown-content{
+    display: block;
+    margin-top: 55px;
+}
+#checky:checked ~ .dropdown-content{
+    display: block;
+    margin-top: 55px;
+}
+#checko:checked ~ .dropdown-content{
+    display: block;
+    margin-top: 55px;
+}
 
 /* RESPONSIVE */
 .mostrar-menu,.esconder-menu{
